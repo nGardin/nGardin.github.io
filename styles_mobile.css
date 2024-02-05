@@ -1,0 +1,77 @@
+/*Front Page*/
+.navbar{
+	width: 45%;
+	position: relative; top: 40%;
+	left: 0; right:0;
+	margin-left: auto; margin-right: auto;
+	color: white;
+}
+.navbar a{
+	font-weight: bolder;
+	text-align: center;
+	padding: 10px;
+	color: grey;
+	font-size: 15px; font-weight: bold;
+	height: 5vh;
+	line-height: 5vh; vertical-align: middle;
+	margin-top: 5px;
+	border: 3px solid grey;
+}
+.navText{
+	text-align: center;
+
+}
+#bigText{
+	left: 0; right: 0;
+	margin-left: auto; margin-right: auto;
+	top: 25%;
+	font-size: 12vw;
+}
+.skillTitles{
+	font-size: 15px;
+	margin-bottom: 20px;
+	margin-left: 8%;
+}
+.infoTitle{
+	font-size: 15px;
+	margin-top: 0; margin-bottom: 5px;
+}
+.date{
+	font-size: 10px;
+	line-height: 15px;
+}
+.infoText, .projInfo{
+	display: none;
+}
+.containers{
+	width: 85%;
+	margin-left: 8%;
+	overflow: hidden;
+}
+.interestCont{
+	height: 25vw;
+}
+.projText{
+	font-size: 15px;
+	height: 15vh;
+}
+#projContainer{
+	height: 25vh;
+	width: 80%;
+	margin-left: 8%;
+	padding: 0;
+}
+#scrollingDiv{
+	width: 100%;
+}
+.projTitle, .seeProj, .projText h1{
+	font-size: 12px;
+	line-height: 12px;
+}
+#leftButton, #rightButton{
+	font-size: 20px;
+	right: -20px;
+}
+#leftButton{
+	left: -25px;
+}

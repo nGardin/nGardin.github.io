@@ -1,0 +1,310 @@
+
+/*Front Page*/
+	#m_container{
+		height: 100vh; width: 100vw;
+	}
+	.navbar{
+	  width: 20%;
+	  position: absolute;
+	  top: 31%; left: 20%;
+	}
+	.navbar a{
+		padding-left: 5vw;
+	 	background-color: #efefef;
+	  	height: 3vw;
+	  	text-align: left;
+	 	text-decoration: none;
+    	padding-bottom: 2.1vh;
+	 	color: grey; 
+    	font-family: 'Montserrat', sans-serif;
+		font-size: 1.5vw;
+		font-weight: 800;
+		display: block;
+		z-index: 99;
+  	}
+  	#mobileText{display: none;}
+  	#bigLogo{
+  		height: 20vw; width: 20vw; 
+  		position: absolute; top: 30vh; right: 25%;
+  		z-index: 200;
+		display: none;
+  	}
+  	#logo{
+  		display: none;
+		margin-top: 1em;
+		margin-left: 5%;
+		height: 4vw;
+		width: 4vw;
+		line-height: 7vw;
+		vertical-align: middle;
+	}
+  	.navbar a:hover{
+  		text-decoration: underline;
+  	}
+  	.cover{
+  		width: 100%;
+  		height: 5vw;
+  		background-color: #efefef;
+  	}
+  	#bigText{
+		position: absolute;
+		top: 30%; left: 35%;
+		margin: 0;
+  		font-family: 'Montserrat', sans-serif;
+	    font-size: 12vw;
+		font-weight: bolder;
+	    text-align: left;
+	    line-height: 10vw;
+		z-index: 100;
+		width: 40%;
+		background: -webkit-linear-gradient(black, rgb(110, 110, 110));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+  	}
+
+/*Projects Section*/
+    #projContainer{
+    	position: relative;
+    	text-align: center;
+    	height: 45vh;
+    	background-size: cover;
+    	color: black;
+    	font-family: 'Montserrat', sans-serif;
+   		font-size: 1.5vw;
+   		line-height: 1vw;
+   		padding: 0% 3% 3% 3%;
+      	word-wrap: break-word;
+		margin-bottom: 10vh;
+    }
+    #scrollingDiv{
+    	margin-top: 2vh;
+    	height: 70%; width: 77%;
+    	margin-left: auto; margin-right: auto;
+    	display: flex;
+    	overflow-x: hidden;
+    }
+    #leftButton, #rightButton{
+    	text-decoration: none;
+    	position: absolute; top: 24%;
+    	height: 3vw; width: 3vw;
+    	color: grey;
+    	border-radius: 50%;
+    	font-size: 2vw;
+    	line-height: 100%;
+    	vertical-align: middle;
+    	z-index: 100;
+    	outline:0;
+    	border: none;
+    }
+    #leftButton{
+ 		left: 7.5vw;
+ 		display: none;
+    }
+    #rightButton{
+    	right: 8.5vw;
+    }
+	#leftButton:hover, #rightButton:hover{
+		cursor: pointer;
+	}
+    .projectBox{
+    	position: relative;
+    	height: 100%;
+    	min-width: 32%;
+    	float: left;
+    	margin: 0 0.5vw 0 0.5vw;
+    }
+    .projectBox:hover .projImg{
+    	filter: blur(5px);
+    	transition: 0.4s;
+    }
+    .projectBox:hover .seeProj{
+    	display: block;
+    }
+    .seeProj{
+    	color: lightblue;
+    	position: relative;
+		float: left; margin-left: 1vw; margin-top: 2vh;
+    	filter: none;
+    	text-decoration: underline;
+    	font-size:1.2vw;
+		display: block;
+    }
+    .projText{
+    	box-sizing: border-box;
+		border-radius: 5px;
+    	height: 100%; width: 100%;
+    	background-color: #383631;
+    	margin: 0;
+		padding: 10px;
+		background: rgb(15,15,17);
+		background: linear-gradient(186deg, rgba(15,15,17,1) 0%, rgba(45,45,59,1) 100%);
+		font-family: 'Montserrat', sans-serif;
+		opacity: 0.8;
+    }
+    .projText h1, .projText p{
+    	float: left; font-weight: bold;
+		text-align: left;
+    	padding: 1vw 1vw 0 1vw;
+    	font-size: 1.2vw;
+    	color: lightgrey;
+    	margin: 0;
+    }
+    .projText p{
+    	font-size: 0.9vw;
+    	text-align: left;
+    	color: lightgrey;
+    	font-weight: lighter;
+		font-family: 'Montserrat', sans-serif;
+    }
+	#projSection{margin-top: 10vh;}
+    #placeHolder{
+    	position: absolute;
+    	bottom: 5vw; left: 0; right: 0;
+    	margin-left: auto; margin-right: auto;
+    	height: 0.6vw; width: 20%;
+    }
+    .pos{
+    	height: 100%; width: 15%;
+    	float: left; margin-right: 5%;
+    	background-color: darkgrey;
+    }
+    .col{
+    	background-color: lightgrey;
+    	height: 200%;
+    	transition: 0.7s;
+    }
+
+/*Skills and Education*/
+	#part3{
+		position: relative;
+  		height: 100%; width: 100%;
+  		background-color: #efefef;
+  	  	font-family: 'Montserrat', sans-serif;
+ 		font-size: 1vw;
+      	word-wrap: break-word;
+      	padding-top: 5vh;
+	}
+	.skillTitles{
+		height: 4vw; width: 50%;
+		background-color: transparent; 
+		color: grey;
+		margin-left: 15%;
+		font-size: 2vw;
+		padding-top: 5vh;
+	}
+	.titleLine{width: 30%;}
+	.containers{
+		height: 18vw;
+		margin-top: 0vw;
+		display: inline-block;
+		position: relative;
+		width: 70%; 
+		background-color: transparent;
+		margin-left: 15%; margin-bottom: 2vw;
+		transition: 2s;
+		border-radius: 5px;
+	}
+	.images{
+		height: 18vw; width: 40%; 
+		background-color: transparent;
+		float: left;
+		background-size: cover;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.containers:hover{
+		margin-top: 0;
+		transition: 1.5s;
+		box-shadow: 0 10px 20px 5px darkgrey;
+		cursor: default;
+	}
+	#img1{background-image: url("Images/wedding.png");}
+	#img2{background-image: url("Images/javapro.jpg");}
+	#img3{background-image: url("Images/agile.jpeg");}
+	#img4{background-image: url("Images/uottawa.jpg"); background-position: 50% 50%; background-repeat: no-repeat;}
+	#imgLigado{background-image: url("Images/ligadoLogo.jpg"); background-size: 35vw;
+               background-position: 50% 50%;}
+	#imgArts{background-image: url("Images/arts.jpeg"); background-position: 50% 50%;}
+	#imgBank{background-image: url("Images/bank.jpeg"); background-position: 50% 50%;}
+	#imgHosp{background-image: url("Images/hospital.jpeg"); background-position: 50% 50%;}
+    #pianoImg{background-image: url("Images/piano.jpg");}
+    #futsalImg{background-image: url("Images/futsal.jpg");}
+    #AIimg{background-image: url("Images/vision.webp");}
+
+	.info{
+		display: block;
+		width: 55%; 
+		background-color: transparent;
+		float: left; margin-left: 1vw;
+		margin-right: 0vw;
+	}
+	.infoTitle{
+		margin: 2vh 0 2vh 0;
+		float: left;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2vw;
+		color: grey;
+	}
+	.date{
+		width: 100%;
+		margin: 0; padding: 0;
+		float: left;
+		font-size: 1vw; 
+		line-height: 1.2vw;
+		color: grey;
+		margin-bottom: 5px;
+	}
+	.infoText{
+		float: left;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1vw;
+		color: grey;
+		font-weight: 200;
+		line-height: 1.2vw;
+		margin-top: 3px;
+	}
+	.line{width: 85%; float: left; opacity: 0.5;}
+
+/*Contact page*/
+	#contactPage{
+		display: inline-block;
+		position: relative;
+		height: 50vh; width: 100%;
+		background-color: #e6e6e6;
+		margin: 0; padding: 0;
+	}
+	#contactTitle{
+		position: absolute; top: 15vh;
+		margin: auto;
+    	font-size: 2vw;
+		font-weight: bolder;
+		color: grey;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+		user-select: none;
+	}
+	.contactText{
+		position: absolute; top: 25vh; left: 32%;
+    	color: grey;
+    	font-size: 1.2vw;
+		display: inline;
+		margin-left: 2%;
+	}
+	#phone{left:53%;}
+	#contactInfo{
+		width: 100%; height: 100%;
+		float: left;
+
+	}
+
+/*BODY__________________________________*/
+
+	.color{
+		color: #457EAC;
+	}
+	body{
+    	font-family: 'Montserrat', sans-serif;
+		background-color: #efefef;
+		padding: 0; margin: 0;
+	}
