@@ -53,13 +53,16 @@
 }
 .projText{
 	font-size: 15px;
-	height: 15vh;
+	height: 100%;
 }
 #projContainer{
 	height: 25vh;
 	width: 80%;
 	margin-left: 8%;
 	padding: 0;
+}
+.projectBox{
+	min-width: 49%;
 }
 #scrollingDiv{
 	width: 100%;
@@ -68,12 +71,17 @@
 	font-size: 12px;
 	line-height: 12px;
 }
+.seeProj a, .seeProj{
+	position: absolute;
+	bottom: 2.5vh;
+}
 #leftButton, #rightButton{
+	top: 80%;
 	font-size: 20px;
-	right: -20px;
+	right: 20px;
 }
 #leftButton{
-	left: -25px;
+	left: 25px;
 }
 #contactTitle, .contactText{
 	display: block;
