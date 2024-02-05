@@ -1,9 +1,9 @@
 /*Front Page*/
 .navbar{
 	width: 45%;
-	position: relative; top: 40%;
-	left: 0; right:0;
-	margin-left: auto; margin-right: auto;
+	position: relative; top: 35%;
+	left: 15%; right:0;
+	margin-left: 0; margin-right: 0;
 	color: white;
 }
 .navbar a{
@@ -23,9 +23,10 @@
 }
 #bigText{
 	left: 0; right: 0;
-	margin-left: auto; margin-right: auto;
-	top: 25%;
+	margin-left: 15%; margin-right: auto;
+	top: 20%;
 	font-size: 12vw;
+	width: 60%;
 }
 .skillTitles{
 	font-size: 15px;
@@ -74,4 +75,11 @@
 }
 #leftButton{
 	left: -25px;
+}
+#contactTitle, .contactText{
+	display: block;
+	font-size: 12px;
+}
+.contactText{
+	bottom: 18vh;
 }

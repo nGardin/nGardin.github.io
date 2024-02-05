@@ -22,22 +22,6 @@
 		display: block;
 		z-index: 99;
   	}
-  	#mobileText{display: none;}
-  	#bigLogo{
-  		height: 20vw; width: 20vw; 
-  		position: absolute; top: 30vh; right: 25%;
-  		z-index: 200;
-		display: none;
-  	}
-  	#logo{
-  		display: none;
-		margin-top: 1em;
-		margin-left: 5%;
-		height: 4vw;
-		width: 4vw;
-		line-height: 7vw;
-		vertical-align: middle;
-	}
   	.navbar a:hover{
   		text-decoration: underline;
   	}
@@ -56,7 +40,7 @@
 	    text-align: left;
 	    line-height: 10vw;
 		z-index: 100;
-		width: 40%;
+		width: 60%;
 		background: -webkit-linear-gradient(black, rgb(110, 110, 110));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -285,17 +269,18 @@
 		user-select: none;
 	}
 	.contactText{
-		position: absolute; top: 25vh; left: 32%;
+		position: absolute; bottom: 10vh; left: 0;
+		width: 100%;
     	color: grey;
     	font-size: 1.2vw;
 		display: inline;
-		margin-left: 2%;
+		left: 0;
+		margin-left: auto; margin-right: auto;
+		text-align: center;
 	}
-	#phone{left:53%;}
 	#contactInfo{
 		width: 100%; height: 100%;
 		float: left;
-
 	}
 
 /*BODY__________________________________*/
