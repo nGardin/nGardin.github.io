@@ -1,7 +1,7 @@
 /*Front Page*/
 .navbar{
 	width: 45%;
-	position: relative; top: 35%;
+	position: relative; top: 32%;
 	left: 15%; right:0;
 	margin-left: 0; margin-right: 0;
 	color: white;
@@ -19,7 +19,6 @@
 }
 .navText{
 	text-align: center;
-
 }
 #bigText{
 	left: 0; right: 0;
