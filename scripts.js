@@ -111,48 +111,48 @@
     }
 
 //Typewritter Effect
-document.addEventListener('DOMContentLoaded',function(event){
+// document.addEventListener('DOMContentLoaded',function(event){
 
-    var dataText = [""];
-    var whereToWrite = [""]
+//     var dataText = [""];
+//     var whereToWrite = [""]
     
-    // type one text in the typwriter
-    // keeps calling itself until the text is finished
-    function typeWriter(headingNum, text, i, fnCallback) {
-      // check if text isn't finished yet
-      if (i < (text.length)) {
-        // add next character to h1
-        document.querySelector(whereToWrite[headingNum]).innerHTML = text.substring(0, i+1);
-        setTimeout(
-          function() {typeWriter(headingNum, text, i + 1, fnCallback)}, 150);
-    }
+//     // type one text in the typwriter
+//     // keeps calling itself until the text is finished
+//     function typeWriter(headingNum, text, i, fnCallback) {
+//       // check if text isn't finished yet
+//       if (i < (text.length)) {
+//         // add next character to h1
+//         document.querySelector(whereToWrite[headingNum]).innerHTML = text.substring(0, i+1);
+//         setTimeout(
+//           function() {typeWriter(headingNum, text, i + 1, fnCallback)}, 150);
+//     }
 
-      // text finished, call callback if there is a callback function
-      else if (typeof fnCallback == 'function') {
-        // call callback after timeout
-        setTimeout(fnCallback, 120000);
-      }
-    }
+//       // text finished, call callback if there is a callback function
+//       else if (typeof fnCallback == 'function') {
+//         // call callback after timeout
+//         setTimeout(fnCallback, 120000);
+//       }
+//     }
 
-      // start a typewriter animation for a text in the dataText array
-      function StartTextAnimation(i) {
+//       // start a typewriter animation for a text in the dataText array
+//       function StartTextAnimation(i) {
 
-      //if list element does not exist, wait 10s before repeating (aka: dont repeat)
-      if (typeof dataText[i] == 'undefined'){
-          setTimeout(function() {
-            StartTextAnimation(0);
-          }, 5000);
-       }
-      // check if dataText[i] exists
-      if (i < dataText[i].length) {
-        // text exists! start typewriter animation
-        typeWriter(i, dataText[i], 0, function(){
-         // after callback (and whole text has been animated), start next text
-         StartTextAnimation(i + 1);
-       });
-      }
-    }
-    // start the text animation
-    setTimeout(
-      function() {StartTextAnimation(0)}, 0000 )
-    });
+//       //if list element does not exist, wait 10s before repeating (aka: dont repeat)
+//       if (typeof dataText[i] == 'undefined'){
+//           setTimeout(function() {
+//             StartTextAnimation(0);
+//           }, 5000);
+//        }
+//       // check if dataText[i] exists
+//       if (i < dataText[i].length) {
+//         // text exists! start typewriter animation
+//         typeWriter(i, dataText[i], 0, function(){
+//          // after callback (and whole text has been animated), start next text
+//          StartTextAnimation(i + 1);
+//        });
+//       }
+//     }
+//     // start the text animation
+//     setTimeout(
+//       function() {StartTextAnimation(0)}, 0000 )
+//     });
