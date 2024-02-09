@@ -132,6 +132,7 @@
     	font-size: 1.2vw;
     	color: lightgrey;
     	margin: 0;
+		width: 80%;
     }
     .projText p{
     	font-size: 0.9vw;
@@ -140,6 +141,9 @@
     	font-weight: lighter;
 		font-family: 'Montserrat', sans-serif;
     }
+	#solarCity{
+		background-color: #000000;
+	}
 	#projSection{margin-top: 10vh;}
     #placeHolder{
     	position: absolute;
